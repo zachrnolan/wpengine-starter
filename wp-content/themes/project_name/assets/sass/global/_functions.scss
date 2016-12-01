@@ -1,0 +1,28 @@
+/*
+
+    FUNCTIONS
+    =========
+
+    Global functions and calculations.
+
+*/
+
+/* Font-size Pixel to Rem */
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+@mixin fontSize($size) {
+  font-size: $size; //Fallback in px
+  font-size: calculateRem($size);
+}
+
+/* Line-height Pixel to Rem */
+@function calculateLineHeight($size) {
+  $lineHeightSize: $size / 16px;
+  @return #{$lineHeightSize}rem;
+}
+@mixin lineHeight($size) {
+  line-height: $size; //Fallback in px
+  line-height: calculateLineHeight($size);
+}

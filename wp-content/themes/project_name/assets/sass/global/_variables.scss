@@ -1,0 +1,21 @@
+/*
+
+    VARIABLES
+    =========
+
+    Grid sizing, color values, standard measurements, transitions
+    and other global attributes.
+
+*/
+
+/* Grid */
+$small:        "min-width: 480px";
+$small-medium: "min-width: 600px";
+$medium:       "min-width: 768px";
+$medium-large: "min-width: 960px";
+$large:        "min-width: 1024px";
+$xl:           "min-width: 1170px";
+
+/* Colors */
+$white: #ffffff;
+$black: #000000;
